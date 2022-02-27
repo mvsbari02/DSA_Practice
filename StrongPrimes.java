@@ -51,7 +51,7 @@
 
                -> By the end of the process we get an array with values corresponding to the count
                     of strong primes upto that index i.e primeStatus[n] => number of strong primes 
-                    under n (including n).
+                    upto n (including n).
                 
                     Eg : number of strong primes under 5 is primeStatus[5]
                 
