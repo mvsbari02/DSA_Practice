@@ -1,4 +1,31 @@
+/*
+      
+    
+    This program gives the count of strong primes between two given numbers a and b.
+
+    Constraints : 1 <= a,b <= 10^6
+                  1 <= t <= 10^4
+
+    Eg: Input : 10 20
+        Output : 2
+
+    A number is called a Strong prime if two times the number is greater than the sum of the previous 
+     prime number and the next prime number.
+
+    Eg: Consider 11.
+            2 * 11 > 7 + 13
+            2 times 11 is greater than the sum of the previous prime number(7) and the next prime number
+            (13). So 11 is a Strong Prime.
+
+    Approach : 
+
+    
+
+*/
+
+
 import java.util.*;
+
 public class StrongPrimes {
     public static int[] strongPrimes() {
         int max = 1000004;
