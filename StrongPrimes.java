@@ -17,8 +17,51 @@
             2 times 11 is greater than the sum of the previous prime number(7) and the next prime number
             (13). So 11 is a Strong Prime.
 
-    Approach : 
+    Approach : First we get all prime numbers using idea of Sieve of Eratosthenes.
 
+                //Sieve of Eratoshtenes
+               -> In Sieve of Eatosthenes approach, firstly we take an array (primeStatus) of max size 
+               and initialize with 1.
+               -> Now starting from 2 for every prime number less than or equal to square root of the maxi-
+               -mum value, multiples of those prime numbers are set to 0.
+               -> So by the end in out array we will have 1 at every prime index and 0 for every non-prime
+               index.
+
+               
+               -> After getting an array with 1's at prime indices, we use three pointers viz prev, cur,
+                next and a count variable initialized with 0 to find strong primes.
+               -> Now prev is initialized with index 2,cur is initialized with index 3 and next is init
+               ialized with index 5.
+               -> As we know that 2 cannot be a strong prime we put 0 at index 2.
+
+                // to get the number of strong primes under a number at that index
+               ->Now for every triplet of (prev,cur,next) such that cur <= max :
+                    -> If the condition 2 * cur > prev + next is satisfied :
+                        - count is increased by 1
+                        - and the value at the cur index will be the count
+                    -> If the above condition fails :
+                        - the value at the cur index will be set to the value at the cur-1 index
+                    -> Then we update value of prev to cur
+                    -> Now we update the values of indices between the cur and next with the value of 
+                    their previous indices (all values will be equal to value of cur index) and 
+                    eventually the cur will be updated to next
+                    -> Now we update the next index by iterating from next + 1 until we find value 1
+
+                
+
+               -> By the end of the process we get an array with values corresponding to the count
+                    of strong primes under that index i.e primeStatus[n] => number of strong primes 
+                    under n (including n).
+                
+                    Eg : number of strong primes under 5 is primeStatus[5]
+                
+               ->  So, finding the number of Strong primes becomes O(1) process (individually)
+
+
+               -> Finally for every test case, the number of strong primes between two given numbers a,
+               b is given by primeStatus[b] - primeStatus[a-1].
+                    Eg : number of strong primes between 10 and 20 will be primeStatus[20] - primeStatu
+                    s[10-1] which is equal to 2.
     
 
 */
