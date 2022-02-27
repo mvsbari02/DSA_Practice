@@ -50,12 +50,12 @@
                 
 
                -> By the end of the process we get an array with values corresponding to the count
-                    of strong primes under that index i.e primeStatus[n] => number of strong primes 
+                    of strong primes upto that index i.e primeStatus[n] => number of strong primes 
                     under n (including n).
                 
                     Eg : number of strong primes under 5 is primeStatus[5]
                 
-               ->  So, finding the number of Strong primes becomes O(1) process (individually)
+               ->  So, finding the number of Strong primes upto a number becomes O(1) process (individually)
 
 
                -> Finally for every test case, the number of strong primes between two given numbers a,
