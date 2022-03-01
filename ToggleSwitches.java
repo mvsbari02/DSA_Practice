@@ -1,7 +1,7 @@
 /*
 
         -> Problem Statement :
-          We are given n bulbs (initially turned off)and a toggle operation turns off the bulb if it's 
+          We are given n bulbs (initially turned off) and a toggle operation turns off the bulb if it's 
           turned on and vice-versa. We have to return numbr of bulbs that a re turned on after performing
           n rounds of specific operation. In ith round we will toggle every ith bulb.
 
