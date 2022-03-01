@@ -60,8 +60,8 @@ public class ToggleSwitches {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter no.of bulbs : ");
-        int n = in.nextInt();
-        int result = (int) Math.floor(Math.sqrt(n));
+        int nOfBulbs = in.nextInt();
+        int result = (int) Math.floor(Math.sqrt(nOfBulbs));
         System.out.println(result);
         in.close(); 
     }
