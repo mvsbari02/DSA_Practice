@@ -36,8 +36,20 @@
             then number of factors will be (r1 + 1)*(r2 + 1)*(r3 + 1) and this product should be odd.
             -> For a product should be odd, each and every term should be odd.
             -> If r+1 must be odd then r should be even. So, every r1,r2,r3 should be even.
-                So, N which is equal to p1 ^ r1 * p2 ^ r2 * p3 ^ r3 
-                       will be equal to p1 ^ (2*k1) * p2 ^ (2*k2) * p3 ^ (2*k3)
+                So, N which is equal to p1^r1 * p2^r2 * p3^r3 
+                       will be equal to p1^(2*k1) * p2^(2*k2) * p3^(2*k3)
+                       is in the form of (p1^k1 * p2^k2 * p3^k3) ^ 2 which is a perfect square.
+            
+            -> So a number having odd number of factors should always be a perfect square.
+
+            -> So the bulb of index which is perfect square will be turned on after n rounds of 
+            operations.
+            -> So number of perfect squares upto the given number of bulbs will be our answer and is 
+            given by the integral part of square root of the number .
+            
+            Eg: if we have 10 bulbs, after 10 rounds of operations we have integral part of square root
+            of 10 which is equal to 3 bulbs will be turned on.
+            
 
 
 
